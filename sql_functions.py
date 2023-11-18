@@ -21,9 +21,9 @@ create_books_sql = """
 """
 
 
-def create_connection():
+def create_connection(db_file):
     try:
-        conn = sqlite3.connect("library.db")
+        conn = sqlite3.connect(db_file)
         return conn
     except Error as e:
         print(e)

@@ -1,6 +1,6 @@
 from sql_functions import *
 
-conn = create_connection()
+conn = create_connection("library.db")
 execute_sql(conn, create_books_sql)
 execute_sql(conn, create_authors_sql)
 
